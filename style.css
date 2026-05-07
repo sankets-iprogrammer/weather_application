@@ -1,0 +1,271 @@
+.hourly-card-list::-webkit-scrollbar {
+    display: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.card {
+    max-height: 300px;
+    width: 400px;
+    display: grid;
+}
+
+body {
+    background: linear-gradient(to bottom, #2E335A 0%, #1C1B33 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-body {
+    width: 100%;
+}
+
+.appbar {
+    background-color: #252147;
+    /* height: 7vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    font-size: 18px;
+    color: #94A3B8;
+    font-weight: 600;
+}
+
+#logo {
+    height: 40px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 50px;
+}
+
+.container-1-color {
+    border-radius: 32px;
+    background: linear-gradient(90deg,
+            #5936B4 0%,
+            #362A84 100%);
+}
+
+.container-1-width {
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.searchbar {
+    display: flex;
+    gap: 10px;
+    background-color: #272845;
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 20px;
+    /* width: 20%; */
+    padding: 7px 15px;
+    overflow: hidden;
+}
+
+.searchbar input {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #94A3B8;
+    font-weight: 600;
+}
+#error-container{
+    display: none;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.error-text{
+    color: #f94343;
+    font-size: 22px;
+    margin: auto;
+
+}
+.main-content {
+    padding: 20px;
+    justify-items: center;
+}
+
+.city-overview {
+    padding: 8% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.city-overview-data {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#city-status-image img {
+    height: 200px;
+}
+
+#city-status-image {
+    display: flex;
+    justify-content: center;
+}
+
+.city-sub-header {
+    color: #ECB2FF;
+    font-size: 15px;
+}
+
+.city-title {
+    color: #E2E2E2;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.city-temp {
+    color: #FFFFFF;
+    font-size: 96px;
+}
+
+.city-footer {
+    color: #C5C1F6;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.desc-card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.desc-card {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc-card img {
+    margin-bottom: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.card-header {
+    color: #D4C0D7;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-value {
+    color: #E2E2E2;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hourly-card-list {
+    width: 100%;
+    min-height: 100px;
+    margin-top: 20px;
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.hourly-card {
+    background-color: #5936B4;
+    box-shadow: 1px 1px 1px #3d247b;
+    border-radius: 16px;
+    padding: 20px;
+    width: max-content;
+    border: 1px solid #5936B4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hourly-card img {
+    height: 40px;
+}
+
+.text-color-1 {
+    color: #D946EF;
+}
+
+.back-img {
+    height: 100%;
+    width: 100%;
+}
+
+.front-img {
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    bottom: 12%;
+    left: 0%;
+
+}
+
+.status-img {
+    position: absolute;
+    height: 80%;
+    width: 50%;
+    bottom: 30%;
+    left: 65%;
+}
+
+.card {
+    position: relative;
+    margin: 10%;
+}
+
+.card-info {
+    height: 70%;
+    width: 90%;
+    font-size: 200%;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    padding: 2%;
+    margin: 10% 7%;
+}
+
+@media(max-width:60em) {
+    .nav-items {
+        display: none;
+    }
+
+    .desc-card-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media(max-width:34em) {
+    .city-overview {
+        flex-direction: column;
+    }
+
+    .appbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+     .desc-card-list {
+        grid-template-columns: 1fr;
+    }
+}

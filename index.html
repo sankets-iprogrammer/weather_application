@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-body">
+        <div class="appbar">
+            <img id="logo" src="./assets/logo.png" alt="logo">
+            <div class="nav-items">
+                <span class="nav-item text-color-1">Today</span>
+                <span class="nav-item">Forecast</span>
+                <span class="nav-item">Air Quality</span>
+                <span class="nav-item">Cities</span>
+            </div>
+            <div class="searchbar">
+                <img src="./assets/search.png" alt="">
+                <input placeholder="Search for a city" type="text" id="searchbar-input">
+            </div>
+        </div>
+        <div class="main-content">
+            <!-- show error container -->
+             <div id="error-container" class="city-overview container-1-color container-1-width">
+                No matching location found.
+             </div>
+            <!-- city overview container -->
+            <div class="city-overview container-1-color container-1-width">
+                <div class="city-overview-data">
+                    <span class="city-sub-header">CURRENT LOCATION</span>
+                    <span id="city-title" class="city-title">City, Country</span>
+                    <span id="city-temp" class="city-temp">--°C</span>
+                    <span id="city-footer" class="city-footer">--- ---</span>
+                </div>
+                <div id="city-status-image">
+                    <img src="./assets/status_icon/1000_d.png">
+                </div>
+                
+            </div>
+            <!-- city desc card list -->
+            <div class="desc-card-list container-1-width">
+                <div class="desc-card container-1-color">
+                    <img src="./assets/humidity.png" alt="humidity">
+                    <span class="card-header">HUMIDITY</span>
+                    <span id="humidity" class="card-value">--%</span>
+                </div>
+                <div class="desc-card container-1-color">
+                    <img src="./assets/wind.png" alt="humidity">
+                    <span class="card-header">WIND SPEED</span>
+                    <span id="wind" class="card-value">--km/h</span>
+                </div>
+                <div class="desc-card container-1-color">
+                    <img src="./assets/uv.png" alt="humidity">
+                    <span class="card-header">UV INDEX</span>
+                    <span id="uv" class="card-value">--(--)</span>
+                </div>
+                <div class="desc-card container-1-color">
+                    <img src="./assets/pressure.png" alt="humidity">
+                    <span class="card-header">PRESSURE</span>
+                    <span id="pressure" class="card-value">-- hpa</span>
+                </div>
+            </div>
+            <!-- city hourly temperature -->
+            <div class="container-1-width"> 
+                <p class="card-value">Hourly Temperature</p>
+                <div id="hourly-card-list" class="container-1-color hourly-card-list">
+                    <span class="error-text">Data not available</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="card">
+        <img class="front-img" src="./assets/rect_front.svg" alt="">
+        <img class="back-img" src="./assets/rect_back.svg" alt="">
+        <img class="status-img" src="./assets/Moon cloud mid rain.png" alt="">
+        <div class="card-info"><span>19 <sup style="font-size: 20px;">o</sup></span></div>
+    </div> -->
+
+<script src="./index.js"></script>
+</body>
+</html>
