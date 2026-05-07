@@ -1,4 +1,4 @@
-const base_url = "http://api.weatherapi.com/v1/forecast.json"
+const base_url = "https://api.weatherapi.com/v1/forecast.json"
 const api_key = "9d0008c450904b81b71133413260405"
 
 let selected_city = '';
