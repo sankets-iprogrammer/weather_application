@@ -256,7 +256,7 @@ body {
 
 }
 
-@media(max-width:34em) {
+@media(max-width:42em) {
     .city-overview {
         flex-direction: column;
     }
